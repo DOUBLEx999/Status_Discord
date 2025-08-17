@@ -1,5 +1,9 @@
 // If it worked, don't touch anything.
 
+const express = require('express');
+const app = express();
+
+
 const { Client, RichPresence, CustomStatus } = require("discord.js-selfbot-v13");
 const moment = require("moment-timezone");
 const { schedule } = require("node-cron");
@@ -17,6 +21,9 @@ require("colors");
 //   execSync('mode con: cols=155 lines=40');
 // }
 
+app.get('/', (req, res) => {
+  res.send('running');
+});
 
 const replaceEnv = (obj) => {
   for (const key in obj) {
@@ -3277,5 +3284,10 @@ if (require.main === module) {
   console.log("Loading configuration from config.yml...".green);
   main().catch(console.error);
 }
+
+app.listen(8000, '0.0.0.0', () => {
+  console.log(`Server กำลังรันบน port 8000`);
+});
+
 
 module.exports = new StreamManager();
