@@ -3170,7 +3170,7 @@ if (!global.gc) {
 
 async function main() {
   try {
-    execSync('mode con: cols=155 lines=40');
+    // execSync('mode con: cols=155 lines=40');
     const streamManager = new StreamManager();
 
     let tokenConfigs = [];
