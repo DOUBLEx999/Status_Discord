@@ -1,0 +1,69 @@
+tokens:
+  - token: "${DISCORD_TOKEN}"
+    enabled: true
+    customStatus: true  # Set to true to enable custom status cycling
+    voiceEnabled: true  # Set to true to enable voice commands for this token
+    activity:
+      type: "STREAMING"
+
+weatherAPI:
+  key: "1e1a0f498dbf472cb3991045241608" # WeatherAPI key
+
+options:
+  location: "Bangkok" # default
+  tz: "Asia/Bangkok" # default
+  botid: "1109522937989562409" # Discord application ID for RPC
+  city: "Bangkok" # City for weather data
+  proxy: null # Proxy configuration if needed
+
+
+voice:
+  data: "sx!" # default voice command prefix
+  streaming: true # enable voice commands for streaming
+
+
+status:
+  delay: 2000 # default (Minimum 4000)
+  data:
+    - emoji: "🧡"
+      text: "TEXT 1"
+    - emoji: "💛"
+      text: "TEXT 2"
+    - emoji: "💚"
+      text: "TEXT 3"
+    - emoji: "💙"
+      text: "TEXT 4"
+    - emoji: "💜"
+      text: "TEXT 5"
+
+
+rpc:
+  delay: 2000 # default 
+  type: "STREAMING" # STREAMING, PLAYING, LISTENING, WATCHING, COMPETING
+
+  YoutubeURL: "https://www.youtube.com/@dopoelinex"
+
+  name:
+    - "{hour:1} : {min:1} :: {th=date} / {th=month:1} / {en=year:2} ꒱)}"
+  state:
+    - "BABABABABAABAB𓈒"
+  details:
+    - "IDK"
+    - "IDK"
+  assetsLargeText:
+    - "BABABABABAABAB"
+    - "BABABABABAABAB"
+  assetsSmallText:
+    - "Sybau"
+  assetsLargeImage:
+    - "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExejRjYW10c2lub3pzNWt0MnVxejJidGJscjdkZWY5aHpyeXZ5bzZ3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dKxp772yhEWVdB59eZ/giphy.gif"
+    - "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWV1cXl4amkzaXlzOXZ4b2VsdzJjN29mYXFrbzNxcHRlbTJsendkZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lxxOGaDRk4f7R5TkBd/giphy.gif"
+    - "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGNkZHJ4OHR3MHZxcjYxcmI4ZmVjN3lpYzlnNWV4a2V0YXBxdWY4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/s5wFafpHxqKbIEERl9/giphy.gif"
+  assetsSmallImage:
+    - "none"  # Currently disabled - change to image URL to enable
+  buttonFirst:
+    - name: "My Bio"
+      url: "https://namo-bio.netlify.app/"
+  buttonSecond:
+    - name: "Join Discord"
+      url: "https://discord.gg/FRzZqfbtcr"
