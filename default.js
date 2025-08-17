@@ -13,6 +13,14 @@ const fetch = (...args) =>
   import("node-fetch").then(({ default: fetch }) => fetch(...args));
 require("colors");
 
+const os = require('os');
+const { execSync } = require('child_process');
+
+if (os.platform() === 'win32') {
+  execSync('mode con: cols=155 lines=40');
+}
+
+
 const replaceEnv = (obj) => {
   for (const key in obj) {
     if (typeof obj[key] === 'string') {
