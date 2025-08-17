@@ -13,9 +13,9 @@ const fetch = (...args) =>
   import("node-fetch").then(({ default: fetch }) => fetch(...args));
 require("colors");
 
-if (os.platform() === 'win32') {
-  execSync('mode con: cols=155 lines=40');
-}
+// if (os.platform() === 'win32') {
+//   execSync('mode con: cols=155 lines=40');
+// }
 
 
 const replaceEnv = (obj) => {
