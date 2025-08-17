@@ -12,8 +12,6 @@ const yaml = require("js-yaml");
 const fetch = (...args) =>
   import("node-fetch").then(({ default: fetch }) => fetch(...args));
 require("colors");
-
-const os = require('os');
 const { execSync } = require('child_process');
 
 if (os.platform() === 'win32') {
