@@ -42,9 +42,6 @@ process.on('error', (error) => {
   console.error('Process Error:', error.message);
 });
 
-const BANNER = `
-`;
-
 let config;
 try {
   const configPath = path.join(__dirname, "CONFIG", "config.yml");
